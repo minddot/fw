@@ -1,0 +1,2 @@
+# fw
+MindDot Firmware
