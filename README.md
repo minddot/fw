@@ -10,7 +10,6 @@ Building Compiling Envronment
   - RiscV target - RiscV chips like ESP32-CXX are already supported in stock Rust.
   - Xtensa target - we need follow the [instruction steps](https://github.com/esp-rs/rust) for your operating system.
 
-=======
  
  Here, the new mindot will base on **RiscV** target chip.
 
