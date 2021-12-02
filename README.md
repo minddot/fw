@@ -11,8 +11,8 @@ Building Compiling Envronment
   - Xtensa target - we need follow the [instruction steps](https://github.com/esp-rs/rust) for your operating system.
 
  
- Here, the new mindot will base on **RiscV** target chip.
-
+  Here, the new mindot will base on **RiscV** target chip.
+  
 * Build llvm Clang.
   You'll need the custom LLVM clang based on the Espressif LLVM fork for Rust STD support. we need follow [instruction steps](https://github.com/esp-rs/rust).
 * Build APP.
