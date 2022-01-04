@@ -1,0 +1,107 @@
+{
+    "id": "2021-07-05_MindDot_Connect_Test",
+    "data": {
+        "externalId": "2021-07-05-MindDot-data-model-template_v1",
+        "typeModel": {
+            "aspectTypes": [
+                {
+                    "id": "presiot.minddotaspect",
+                    "name": "MindDotAspect",
+                    "category": "dynamic",
+                    "scope": "private",
+                    "variables": [
+                        {
+                            "name": "temperature",
+                            "dataType": "DOUBLE",
+                            "unit": "C/F",
+                            "searchable": true,
+                            "defaultValue": "25",
+                            "qualityCode": true
+                        },
+                        {
+                            "name": "humidity",
+                            "dataType": "DOUBLE",
+                            "unit": "%",
+                            "searchable": true,
+                            "defaultValue": "0",
+                            "qualityCode": true
+                        },
+                        {
+                            "name": "pressure",
+                            "dataType": "DOUBLE",
+                            "unit": "hPa",
+                            "searchable": true,
+                            "defaultValue": "0",
+                            "qualityCode": true
+                        },
+                        {
+                            "name": "acceleration",
+                            "dataType": "DOUBLE",
+                            "unit": "g",
+                            "searchable": true,
+                            "defaultValue": "0",
+                            "qualityCode": true
+                        }
+                    ],
+                    "description": "jiaxing.zhu@siemens.com"
+                }
+            ],
+            "assetTypes": [
+                {
+                    "id": "presiot.MindDot_v1",
+                    "name": "MindDotAssetTypeName",
+                    "parentTypeId": "core.basicasset",
+                    "aspects": [
+                        {
+                            "name": "MindDotAspect",
+                            "aspectTypeId": "presiot.minddotaspect"
+                        }
+                    ],
+                    "description": "jiaxing.zhu@siemens.com",
+                    "instantiable": true,
+                    "scope": "private"
+                }
+            ]
+        },
+        "instanceModel": {
+            "assets": [
+                {
+                    "referenceId": "MindDotAssetReference",
+                    "parentReferenceId": "root",
+                    "typeId": "presiot.MindDot_v1",
+                    "name": "MindDot Asset",
+                    "description": "jiaxing.zhu@siemens.com"
+                }
+            ]
+        },
+        "mappingModel": {
+            "mappings": [
+                {
+                    "dataPointId": "dp01-temperature",
+                    "assetReferenceId": "MindDotAssetReference",
+                    "aspectName": "MindDotAspect",
+                    "variableName": "temperature"
+                },
+                {
+                    "dataPointId": "dp02-humidity",
+                    "assetReferenceId": "MindDotAssetReference",
+                    "aspectName": "MindDotAspect",
+                    "variableName": "humidity"
+                },
+                {
+                    "dataPointId": "dp03-pressure",
+                    "assetReferenceId": "MindDotAssetReference",
+                    "aspectName": "MindDotAspect",
+                    "variableName": "pressure"
+                },
+                {
+                    "dataPointId": "dp04-acceleration",
+                    "assetReferenceId": "MindDotAssetReference",
+                    "aspectName": "MindDotAspect",
+                    "variableName": "acceleration"
+                }
+            ]
+        }
+    }
+}
+

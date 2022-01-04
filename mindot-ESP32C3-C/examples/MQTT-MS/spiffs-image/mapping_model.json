@@ -1,0 +1,12 @@
+{
+    "id": "2021-07-05-MindDot-InstanceGeneration",
+    "data": {
+        "modelExternalId": "2021-07-05-MindDot-data-model-template_v1",
+        "parameterization": {
+            "values": [{
+                "name": "MindDotAspect",
+                "value": "MindDotAspect"
+            }]
+        }
+    }
+}
